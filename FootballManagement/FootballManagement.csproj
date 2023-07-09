@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\**" />
+    <Compile Remove="Migrations\**" />
+    <Compile Remove="Model\**" />
+    <Content Remove="Controllers\**" />
+    <Content Remove="Migrations\**" />
+    <Content Remove="Model\**" />
+    <EmbeddedResource Remove="Controllers\**" />
+    <EmbeddedResource Remove="Migrations\**" />
+    <EmbeddedResource Remove="Model\**" />
+    <None Remove="Controllers\**" />
+    <None Remove="Migrations\**" />
+    <None Remove="Model\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_WebToolingArtifacts Remove="Properties\launchSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Properties\launchSettings.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt" Version="1.0.0" />
+    <PackageReference Include="BCrypt.Net" Version="0.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Migrations\" />
+  </ItemGroup>
+
+>>>>>>> f5b91d4c93f56082a689e5970f523c73658e41fb
+</Project>
